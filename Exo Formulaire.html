@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Formulaire</p>
+    <form method="post" >
+      <fieldset>
+         <legend> Cordonnées</legend><!-- titre de cette patie du formulaire -->
+    <p>
+        <label>Votre nom</label>
+         <input type="text" name="nom" id="nom" placeholder="ex :dupont" autofocus/>
+    </p>
+    <p>
+        <label>Votre Prenom</label>
+         <input type="text" name="prenom" id="prenom" placeholder="ex :pierre" autofocus />
+        <!-- Different type pour input -->
+    </p>
+    <p>
+        <label for="âge">Votre âge</label>
+         <input type="text" name="âge" id="âge" placeholder="ex : 76 ans" autofocus />
+    
+         <label>Votre de date naissance</label>
+        <input type="date" name="date" id="date" autofocus/>
+
+    </p>
+    <p>
+        Votre sexe :
+        <input type="checkbox" name="homme" id="homme" autofocus/><label for="homme">homme</label>
+          <input type="checkbox" name="femme" id="femme" /><label for="femme">femme</label>
+        <input type="checkbox" name="autre" id="autre" /><label for="autre">autre</label>
+        <!-- case a caher correspond au type checkbox -->
+    </p>
+
+    <p>
+        Avez-vous le permis :
+        <input type="radio" name="oui" id="oui" autofocus/><label for="oui">oui</label>
+         <input type="radio" name="non" id="non"/><label for="non">non</label>
+    </p>
+    <p>
+        <label for="pays">Dans quel pays habitez-vous ?</label>
+         <select name="pays" id="pays">
+           <option value="france">France</option>
+            <option value="algeie">Algerie</option>
+             <option value="espagne">Espagne</option>
+              <option value="italie">Italie</option>
+              <option value="allemagne">Allemagne</option>
+             <option value="belgique">Belgique</option>
+            <option value="amerique">Amerique</option>
+           <option value="royaume uni">Royaume uni</option>
+         </select>
+    </p>
+    <p>
+        <label>Numéro de téléphone :</label>
+          <input type="tel" placeholder="ex :06.97.80.etc" autofocus/>
+        
+    </p>
+      </fieldset>
+        <fieldset>
+            <legend>inscription</legend>
+    <p>
+        <label>Votre email :</label>
+           <input type="Email" placeholder="ex :langouste76" autofocus/>
+    </p>
+    <p>
+           <label>Votre mot de passe :</label>
+        <input type="password" name="pass" id="pass" maxlength="8" placeholder="mot de passe" autofocus/>
+    </p>
+        </fieldset>
+    
+    
+    <input type="reset" value="Réinitialiser"/>
+      <input type="submit" value="Envoyer"/>
+   
+      </form>
+
+</body>
+</html>
